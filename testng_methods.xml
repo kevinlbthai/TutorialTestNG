@@ -3,7 +3,12 @@
 <suite name="Annotations">
     <test name="Run Class Annotations">
         <classes>
-            <class name="DemoTestNG.ConfigurationAnnotations_1_DatePickers"/>
+            <class name="DemoTestNG.ConfigurationAnnotations_1_DatePickers">
+                <methods>
+                    <exclude name="test1_BootstrapDatePicker"/>
+                    <include name="test2_JQueryDatePicker"/>
+                </methods>
+            </class>
             <class name="DemoTestNG.ConfigurationAnnotations_2_ListBox"/>
         </classes>
     </test> <!-- Test -->
